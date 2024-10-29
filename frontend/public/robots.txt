@@ -1,0 +1,21 @@
+# robots.txt
+
+# Block all web crawlers from accessing any part of the site
+User-agent: *
+Disallow: /
+
+# Allow all web crawlers to access everything
+User-agent: *
+Disallow:
+
+# Block specific crawlers
+User-agent: Googlebot
+Disallow: /no-google/
+
+User-agent: Bingbot
+Disallow: /no-bing/
+
+# Allow only specific sections of the site
+User-agent: *
+Disallow: /private/
+Allow: /public/
